@@ -1,0 +1,153 @@
+/* Загальні стилі */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #4CAF50;
+}
+
+.description {
+  text-align: center;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.info-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.form {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #555;
+  font-size: 12px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 250ms;
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form-textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.radio-label {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.radio-label span {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: background-color 200ms, color 200ms;
+  cursor: pointer;
+}
+
+.radio-label input:checked + span {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+}
+
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 250ms, box-shadow 250ms;
+}
+
+.form-submit:hover {
+  background: linear-gradient(135deg, #2E7D32, #1B5E20);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-submit:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
