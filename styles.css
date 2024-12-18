@@ -58,7 +58,7 @@ body {
 
 .highlight {
   color: #2e7d32;
-  border-bottom: 2px solid #2e7d32;
+  border-bottom: 2px solid #4dc274;
 }
 
 .description {
@@ -75,6 +75,9 @@ body {
 }
 
 .image-container {
+  width: 597px;
+  height: 537px;
+  left: -52px;
   position: relative;
   flex: 1;
 }
@@ -90,7 +93,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #2e7d32;
+  background: #4dc274;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -116,6 +119,7 @@ body {
   margin-bottom: 6px;
   font-size: 14px;
   color: #555;
+  
 }
 
 .form-input,
@@ -131,7 +135,7 @@ body {
 
 .form-input:focus,
 .form-textarea:focus {
-  border-color: #2e7d32;
+  border-color: #4dc274;
   box-shadow: 0 0 8px rgba(46, 125, 50, 0.3);
 }
 
@@ -160,7 +164,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  background-color: #2e7d32;
+  background-color: #4dc274;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -168,7 +172,7 @@ body {
 }
 
 .form-submit:hover {
-  background-color: #1b5e20;
+  background-color: #4dc274;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -180,7 +184,7 @@ body {
 }
 
 .privacy-text a {
-  color: #2e7d32;
+  color: #4dc274;
   text-decoration: none;
 }
 
