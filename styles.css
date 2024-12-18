@@ -12,30 +12,32 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .title {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 16px;
 }
 
 .highlight {
-  color: #4caf50;
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
 }
 
 .description {
   text-align: center;
   color: #555;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .content-wrapper {
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .image-container {
@@ -45,28 +47,30 @@ body {
 
 .image {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .info-box {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
-  padding: 20px;
-  border-radius: 0 0 12px 12px;
+  width: 100%;
+  background: #2e7d32;
   color: #fff;
   text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
-.info-text {
-  margin: 0;
-  font-size: 14px;
+.info-box strong {
+  font-size: 28px;
 }
 
 .form {
   flex: 1;
+  max-width: 500px;
 }
 
 .form-group {
@@ -75,13 +79,9 @@ body {
 
 .form-label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  font-size: 14px;
   color: #555;
-  font-size: 12px;
-}
-
-.input-wrapper {
-  position: relative;
 }
 
 .form-input,
@@ -90,14 +90,15 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 14px;
   outline: none;
-  transition: border-color 250ms;
+  transition: border-color 0.3s;
 }
 
 .form-input:focus,
 .form-textarea:focus {
-  border-color: #4caf50;
-  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  border-color: #2e7d32;
+  box-shadow: 0 0 8px rgba(46, 125, 50, 0.3);
 }
 
 .form-textarea {
@@ -105,28 +106,17 @@ body {
   resize: none;
 }
 
-.form-subtitle {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
 .radio-label {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-right: 16px;
+  font-size: 14px;
+  color: #333;
 }
 
-.radio-label span {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: background-color 200ms, color 200ms;
-  cursor: pointer;
-}
-
-.radio-label input:checked + span {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
+.radio-label input {
+  margin-right: 8px;
+  accent-color: #2e7d32;
 }
 
 .form-submit {
@@ -134,21 +124,32 @@ body {
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  background-color: #2e7d32;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 250ms, box-shadow 250ms;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .form-submit:hover {
-  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  background-color: #1b5e20;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.form-submit:focus {
-  outline: none;
-  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+.privacy-text {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+.privacy-text a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.privacy-text a:hover {
+  text-decoration: underline;
 }
